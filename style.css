@@ -1,0 +1,122 @@
+:root{
+   --clr--main: rgb(118, 171, 174);
+   --bg--clr: rgb(34, 40, 49);
+   --clr--white:rgb(238, 238, 238);
+}
+
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+html{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.calculator{
+   display: flex;
+   font-family: Arial, Helvetica, sans-serif;
+   width: 100%;
+   min-height: 100vh;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 3rem;
+   background-color: var(--bg--clr);
+   color: var(--clr--white);
+   padding: 20px;
+}
+
+.calculator h2{
+   color: rgb(118, 171, 174);
+   font-size: 1.5rem;
+   letter-spacing: 10px;
+}
+
+input{
+   cursor: pointer;
+   outline: none;
+   font-weight: bold;
+   transition: all .5s;
+}
+
+input:hover,
+input:active{
+   color: white;
+   background-color: rgb(118, 171, 174);
+}
+
+form{
+   width: 80%;
+   height: auto;
+   border-radius: 6px;
+   overflow: hidden;
+   padding: 20px;
+   border: 2px solid rgb(118, 171, 174);
+   margin: 0 auto;
+   background-color: rgb(0,0,0,0.7);
+   gap: 10px;
+   display: flex;
+   flex-direction: column;
+}
+
+.display{
+   padding: 12px 20px; 
+   width: 100%;
+   cursor: default;
+   font-size: 2.5rem;
+   background-color: rgb(118, 171, 174);
+   border: none;
+   border-radius: 6px;
+   color: white;
+   text-align: end;
+}
+
+.display:hover{
+   color: white;
+   background-color: rgb(118, 171, 174);
+}
+
+form > div{
+   width: 100%;
+   display: flex;
+   gap: 10px;
+   align-items: center;
+   justify-content: center;
+}
+
+form > div > input{
+   padding: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   font-size: 1rem;
+   border-radius: 6px;
+   border: 2px solid rgb(118, 171, 174);
+   background-color: transparent;
+   color: rgb(118, 171, 174);
+}
+
+@media (min-width: 500px) {
+   form{
+      max-width: 20rem;
+   }
+
+   .calculator h2{
+      font-size: 1.5rem;
+   }
+}
+
+@media (min-width: 700px){
+   .calculator h2{
+      font-size: 3rem;
+   }
+}
+
+@media (min-width: 999px){
+   .calculator h2{
+      font-size: 5rem;
+   }
+}
